@@ -12,5 +12,9 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "ckey": "^1.0.3",
+    "newsapi": "^2.4.1"
   }
 }

@@ -25,4 +25,8 @@ async function getByCategory(category) {
     return news
 }
 
+let data = await getHeadlines()
+
+console.log(data)
+
 export { getHeadlines, getByCategory }

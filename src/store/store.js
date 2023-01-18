@@ -9,6 +9,10 @@ function newsWritable() {
         cache: []
     };
 
+    subscribe( (n) => {
+        newsStore = n
+    } )
+
     /**
      * 
      * @param {String} validateFor 

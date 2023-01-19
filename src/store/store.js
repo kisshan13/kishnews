@@ -38,4 +38,8 @@ function newsWritable() {
             }
         }
     }
+
+    return { setNewsHeadline }
 }
+
+export const KishNews = newsWritable()

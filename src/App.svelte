@@ -1,5 +1,5 @@
 <script>
-
+    import TailwindCss from "./TailwindCSS.svelte";
 </script>
 
-<h1>Hii</h1>
+<TailwindCss />

@@ -7,7 +7,7 @@
     <Header />
 
     <main>
-        <section class="news p-[1rem] mt-[3rem]">
+        <section class="news p-[1rem] mt-[3rem] sm:">
             <Headlines />
         </section>
     </main>

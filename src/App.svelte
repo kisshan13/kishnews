@@ -1,6 +1,6 @@
 <script>
     import TailwindCss from "./TailwindCSS.svelte";
-    import Home from "./lib/home/Home.svelte";
+    import Home from "./lib/pages/home/Home.svelte";
 </script>
 
 <TailwindCss />

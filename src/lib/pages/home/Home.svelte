@@ -1,6 +1,9 @@
 <script>
     import Header from "../global/Header.svelte";
     import Headlines from "../global/Headlines.svelte";
+    import api from "../../../api/api";
+
+    const kishAPI = api()
 </script>
 
 <div class="home">

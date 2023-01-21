@@ -18,6 +18,9 @@
     </svg>
 </header>
 
-<nav class="bg-[#2CA58D] px-[1rem] py-[0.5rem] mt-[1.5rem]">
-    <a href="#" class="text-xl p-[0.5rem] border-2 border-solid bg-[]">#headlines</a>
+<nav class="bg-[#2CA58D] mt-[1.5rem] p-[0.5rem] py-[1rem] flex gap-[1rem] sm:justify-around">
+    <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#headlines</a>
+    <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#tech</a>
+    <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#business</a>
+    <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#sports</a>
 </nav>

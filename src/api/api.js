@@ -1,7 +1,7 @@
 import NewsAPI from "newsapi";
 import ckey from "ckey";
 
-const kishnews = new NewsAPI(ckey.API_KEY)
+const kishnews = new NewsAPI(import.meta.env.VITE_API_KEY)
 
 function api() {
     async function getHeadlines() {
@@ -28,5 +28,8 @@ function api() {
 
     return {getHeadlines, getByCategory}
 }
+
+
+console.log(import.meta.env)
 
 export default api

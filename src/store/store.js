@@ -1,5 +1,4 @@
 import { writable } from "svelte/store";
-import { getHeadlines, getByCategory } from "../api/api";
 
 function newsWritable() {
     const {subscribe, set, update} = writable()

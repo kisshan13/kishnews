@@ -18,7 +18,7 @@
     </svg>
 </header>
 
-<nav class="bg-[#2CA58D] mt-[1.5rem] p-[0.5rem] py-[1rem] flex gap-[1rem] sm:justify-around">
+<nav class="bg-[#2CA58D] mt-[1.5rem] p-[0.5rem] py-[1rem] flex gap-[1rem] overflow-x-scroll sm:justify-around sm:overflow-x-hidden">
     <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#headlines</a>
     <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#tech</a>
     <a href="#" class="sans text-sm p-[0.3rem] border-2 border-solid bg-[#DDFC74] rounded-md text-[#242F40] font-bold">#business</a>

@@ -11,13 +11,27 @@ class KishAPI {
     }
 
     getHeadLines() {
-        let url = makeUrlToRequest(this.apiLink, 'top-headlines', {country: 'in', language: 'en'}, this.apiKey)
+        let url = makeUrlToRequest(this.apiLink, 'top-headlines', { country: 'in', language: 'en' }, this.apiKey)
 
         let promise = new Promise((resolve, reject) => {
-            axios.get(url).then( (data) => {
+            axios.get(url).then((data) => {
                 resolve(data)
-            }).catch( (e) => {
-                resolve(e)
+            }).catch((e) => {
+                reject(e)
+            })
+        })
+
+        return promise
+    }
+
+    getByCategory(category) {
+        let url = makeUrlToRequest(this.apiLink, 'top-headlines', { country: 'in', language: 'en', category: category }, this.apiKey)
+
+        let promise = new Promise((resolve, reject) => {
+            axios.get(url).then((data) => {
+                resolve(data)
+            }).catch((e) => {
+                reject(e)
             })
         })
 
@@ -35,7 +49,7 @@ class KishApiError extends Error {
     }
 }
 
-function makeUrlToRequest(api ,endpoint, options, apiKey) {
+function makeUrlToRequest(api, endpoint, options, apiKey) {
     let query = new URLSearchParams(options).toString()
     return query ? `${api}${endpoint}?${query}&apiKey=${apiKey}` : `${api}${endpoint}&apiKey=${apiKey}`
 }

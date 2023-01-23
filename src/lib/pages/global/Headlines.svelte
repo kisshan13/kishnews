@@ -1,6 +1,6 @@
 <script>
     import { reduceText } from "../../functions/function";
-    
+    import { KishNews } from "../../../api/kishapi";
     let text =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iure repellat eum dolores, repudiandae nisi reprehenderit ex nam laudantium iste dicta deserunt sapiente eos, id aperiam earum veritatis adipisci fugiat nobis perferendis delectus harum! Animi cumque labore eveniet explicabo impedit quam possimus esse quod aperiam!"
 </script>

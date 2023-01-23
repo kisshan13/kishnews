@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const API_KEY = import.meta.env.VITE_API_KEY
+const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT
 
 class KishAPI {
     constructor(apiKey, apiLink) {
@@ -37,8 +39,6 @@ class KishAPI {
 
         return promise
     }
-
-
 }
 
 class KishApiError extends Error {
@@ -55,4 +55,4 @@ function makeUrlToRequest(api, endpoint, options, apiKey) {
 }
 
 
-export { KishAPI }
+export const KishNews = new KishAPI(API_KEY, API_ENDPOINT)

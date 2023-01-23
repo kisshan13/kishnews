@@ -1,5 +1,5 @@
 <script>
-    import { KishAPI } from "./api/kishapi";
+    import { KishNews } from "./api/kishapi";
     import "./global.css";
 
     const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;

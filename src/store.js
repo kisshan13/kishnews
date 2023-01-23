@@ -25,9 +25,3 @@ function newsWritable() {
 
     return {news, setHeadlines}
 }
-
-export const news = newsWritable()
-export const headlineCache = writable()
-export const businessCache = writable()
-export const techCache = writable()
-export const sportsCache = writable()

@@ -1,8 +1,7 @@
 <script>
     import { reduceText } from "../../functions/function";
-    import { KishNews } from "../../../api/kishapi";
-    let text =
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iure repellat eum dolores, repudiandae nisi reprehenderit ex nam laudantium iste dicta deserunt sapiente eos, id aperiam earum veritatis adipisci fugiat nobis perferendis delectus harum! Animi cumque labore eveniet explicabo impedit quam possimus esse quod aperiam!"
+
+    export let headlines;
 </script>
 
 <div class="news-conatin">
@@ -17,8 +16,7 @@
                 class="w-full h-full rounded-sm"
             />
         </div>
-        <h1 class="sans block text-[#DCE1E9]">
-            {reduceText(text, 20)} <a href="#">...read more</a>
+        <h1 class="sans block text-[#DCE1E9]"> <a href="#">...read more</a>
         </h1>
     </article>
 </div>

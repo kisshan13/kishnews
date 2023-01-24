@@ -9,6 +9,7 @@
 
     <main>
         <section class="news p-[1rem] mt-[3rem] flex flex-col items-center">
+            <Headlines head=''/>
         </section>
     </main> 
 </div>

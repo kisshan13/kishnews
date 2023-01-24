@@ -17,7 +17,7 @@ class KishAPI {
 
         let promise = new Promise((resolve, reject) => {
             axios.get(url).then((data) => {
-                resolve(data)
+                resolve(data.data)
             }).catch((e) => {
                 reject(e)
             })
@@ -55,4 +55,4 @@ function makeUrlToRequest(api, endpoint, options, apiKey) {
 }
 
 
-export const KishNews = new KishAPI(API_KEY, API_ENDPOINT)
+export const api = new KishAPI(API_KEY, API_ENDPOINT)

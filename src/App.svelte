@@ -1,13 +1,12 @@
 <script>
-    import { KishNews } from "./api/kishapi";
     import "./global.css";
+    import Home from "./lib/pages/home/Home.svelte";
 
-    const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
-    const API_KEY = import.meta.env.VITE_API_KEY;
 </script>
 
-<div class="wrapper" />
-
+<div class="wrapper">
+    <Home />
+    </div>
 <style>
     :global(html) {
         background-color: #242f40;

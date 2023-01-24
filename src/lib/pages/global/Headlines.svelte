@@ -1,11 +1,23 @@
 <script>
     import { reduceText } from "../../functions/function";
+    import { api } from "../../../api/kishapi";
+    import { onMount } from "svelte";
+    export let head;
+    let dataNews
 
-    export let headlines;
+    onMount( async() => {
+        dataNews = await api.getHeadLines()
+    })
 </script>
 
 <div class="news-conatin">
-    <article
+
+    {#await dataNews}
+    <h1>Waiting</h1>
+    {:then data}
+    <p>{JSON.stringify(dataNews)}</p>
+    {/await}
+    <!-- <article
         class="news bg-[#2CA58D] py-[1rem] px-[0.5rem] rounded-md max-w-[20rem] flex flex-col items-center gap-[1rem]"
     >
         <div class="img-container max-w-[240px] max-h-[135px]">
@@ -18,5 +30,5 @@
         </div>
         <h1 class="sans block text-[#DCE1E9]"> <a href="#">...read more</a>
         </h1>
-    </article>
+    </article> -->
 </div>

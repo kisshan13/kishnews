@@ -8,7 +8,7 @@
     <Header />
 
     <main>
-        <section class="news p-[1rem] mt-[3rem] flex flex-col items-center">
+        <section class="news p-[1rem] mt-[3rem] flex flex-col items-center md:flex-row">
             <Headlines head=''/>
         </section>
     </main> 

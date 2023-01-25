@@ -3,7 +3,7 @@
     import { api } from "../../../api/kishapi";
     import { onMount } from "svelte";
     export let head;
-    let dataNews
+    let dataNews =[]
 
     onMount( async() => {
         dataNews = await api.getHeadLines()
@@ -13,9 +13,24 @@
 <div class="news-conatin">
 
     {#await dataNews}
-    <h1>Waiting</h1>
+    <h1 class="text-[#fff]">LOADING...</h1>
     {:then data}
-    <p>{JSON.stringify(dataNews)}</p>
+    {#each data as d}
+    <article
+    class="news bg-[#2CA58D] py-[1rem] px-[0.5rem] rounded-md max-w-[20rem] flex flex-col items-center gap-[1rem]"
+>
+    <div class="img-container max-w-[240px] max-h-[135px]">
+        <img
+            src={d.urlToImage}
+            alt=""
+            srcset=""
+            class="w-full h-full rounded-sm"
+        />
+    </div>
+    <h1 class="sans block text-[#DCE1E9]"> <a href="#">...read more</a>
+    </h1>
+</article> 
+    {/each}
     {/await}
     <!-- <article
         class="news bg-[#2CA58D] py-[1rem] px-[0.5rem] rounded-md max-w-[20rem] flex flex-col items-center gap-[1rem]"

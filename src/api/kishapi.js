@@ -17,7 +17,7 @@ class KishAPI {
 
         let promise = new Promise((resolve, reject) => {
             axios.get(url).then((data) => {
-                resolve(data.data)
+                resolve(data.data.articles)
             }).catch((e) => {
                 reject(e)
             })
